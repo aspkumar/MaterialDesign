@@ -66,10 +66,6 @@ public class MainActivity extends AppCompatActivity {
             mRecyclerView.setVisibility(View.GONE);
             tvEmptyView.setVisibility(View.VISIBLE);
 
-
-
-
-
         } else {
             mRecyclerView.setVisibility(View.VISIBLE);
             tvEmptyView.setVisibility(View.GONE);

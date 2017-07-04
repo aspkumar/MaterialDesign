@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2cfcf"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/name_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Name"
+        />
+
+    <EditText
+        android:id="@+id/age_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:hint="Age" />
+
+    <Button
+        android:id="@+id/save_BTN"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save" />
+
+    <TextView
+        android:id="@+id/log_TV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Log..." />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/specific_TV"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/specificbtn_TV"
+        android:text="clickbtn"/>
+</LinearLayout>

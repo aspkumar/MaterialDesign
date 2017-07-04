@@ -3,6 +3,8 @@
     package="com.example.prasannakumara.materialdesign">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -11,6 +13,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+
+        <!--<activity android:name=".splashscreen.Splash" android:theme="@style/SplashTheme">-->
+        <!-- <activity android:name=".customdialogcolorpallette.CustomDialog" >
+             &lt;!&ndash;<activity android:name=".realmdatabase.LoginActiviy">&ndash;&gt;
+               <intent-filter>
+                   <action android:name="android.intent.action.MAIN" />
+                   <category android:name="android.intent.category.LAUNCHER" />
+
+               </intent-filter>
+
+           </activity>-->
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -20,10 +34,14 @@
         </activity>
         <activity android:name=".animations.WelcomeScreen">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+        <activity android:name=".realmdatabase.LoginActiviy"/>
+        <activity android:name=".customdialogcolorpallette.CustomDialog" />
         <activity android:name=".paginationusingRV.MainActivity" />
         <!-- <activity android:name=".steppersAPI.SteppersApiMain"/> -->
         <activity android:name=".steppers.SteppersMain" />
@@ -34,9 +52,17 @@
         <activity android:name=".chipset.DeleteChipActivity" />
         <activity android:name=".bottomsheet.BottonSheetMain" />
         <activity android:name=".chipset.ChipsetMain" />
-
+        <activity android:name=".buttons.ButtonsMain" />
+        <activity android:name=".cardViewwithRecyclerView.CardViewMain"/>
+        <activity android:name=".datatablesandexpansionpanel.DataRecyclerMain"/>
         <!-- <activity android:name=".MainActivity"> -->
         <!--<activity android:name=".animations.WelcomeScreen"></activity>-->
+
+        //fluid2d
+        <activity android:name=".fluid2d.MainActivity"/>
+
+        //fluidgpu
+        <!--<activity android:name=".fluidsgpu.MainActivity"/>-->
     </application>
 
 </manifest>

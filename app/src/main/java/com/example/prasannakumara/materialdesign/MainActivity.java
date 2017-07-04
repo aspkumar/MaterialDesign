@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import com.example.prasannakumara.materialdesign.R;
 
 import java.util.ArrayList;
 
@@ -27,11 +26,17 @@ public class MainActivity extends AppCompatActivity {
         comparr.add(new ComponetsNameModel("Bottom Layout","onething"));
         comparr.add(new ComponetsNameModel("Steppers","sampleSteppers"));
         comparr.add(new ComponetsNameModel("Pagination","sample pagination"));
+        comparr.add(new ComponetsNameModel("Bottom Sheets","sample Bottom Sheets"));
+        comparr.add(new ComponetsNameModel("Buttons","sample Buttons"));
+        comparr.add(new ComponetsNameModel("CardView","sample cardview"));
+        comparr.add(new ComponetsNameModel("DataTables & ExpansionPanel","sample datatable"));
+        comparr.add(new ComponetsNameModel("Dialogs","Sample Dialogs"));
+        comparr.add(new ComponetsNameModel("Realm Database","Sample RealmDatabase"));
+        comparr.add(new ComponetsNameModel("flud2dgraphics","sample fluid graphics"));
         recyclerView = (RecyclerView) findViewById(R.id.main_recycler_view);
         RecyclerViewAdapter adapter=new RecyclerViewAdapter(getApplicationContext(),comparr);
         RecyclerView.LayoutManager layoutManager=new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.setAdapter(adapter);
-
     }
 }
